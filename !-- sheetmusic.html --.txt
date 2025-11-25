@@ -1,0 +1,33 @@
+<!-- sheetmusic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheet Music – Viola Central</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+<a href="index.html" class="logo">Viola Central</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="sheetmusic.html">Sheet Music</a>
+</div>
+</nav>
+
+
+<header class="hero small">
+<h1>Sheet Music</h1>
+<p>Download and view viola sheet music.</p>
+</header>
+
+
+<section class="music-list">
+<h2>Available Sheets</h2>
+<ul>
+<li><a href="example.pdf" target="_blank">Example Sheet Music (PDF)</a></li>
+</ul>
+</section>
+</body>
+</html>
