@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sheet Music Preview</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .audio-player {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .page {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .page img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Sheet Music Preview</h1>
+
+<div class="audio-player">
+    <h3>Audio Sample</h3>
+    <audio controls>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+</div>
+
+<h2>Preview Pages</h2>
+
+<div id="preview"></div>
+
+<script>
+// Number of pages your preview has
+let totalPages = 5;
+
+let preview = document.getElementById("preview");
+
+for (let i = 1; i <= totalPages; i++) {
+    let pageDiv = document.createElement("div");
+    pageDiv.className = "page";
+
+    let img = document.createElement("img");
+    img.src = `sheetmusic/page${i}.png`;
+
+    pageDiv.appendChild(img);
+    preview.appendChild(pageDiv);
+}
+</script>
+
+</body>
+</html>
